@@ -22,7 +22,7 @@ It is designed as a basic e-commerce UI with product categories, promotional off
 
 fashion-store/  
 │  
-├── index.html  
+├── fashion_store.html  
 ├── fashion_store.css  
 ├── images/  
 │   ├── tshirt.png  
@@ -36,7 +36,7 @@ fashion-store/
 
 ## 📸 Screenshot
 
-![Fashion Store](./screenshots/fake-store-screenshot.png)
+![Fashion Store](./screenshots/fashion-store-screenshot.png)
 
 ## ▶️ How to Run the Project
 
