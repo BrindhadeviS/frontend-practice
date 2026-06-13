@@ -20,10 +20,11 @@ A simple Netflix landing page clone built using HTML and CSS. This project recre
 
 netflix-clone/  
 │  
-├── index.html  
+├── netflix.html  
 ├── netflix.css  
-├── images/  
-└── README.md  
+├── images/   
+├── screenshots/  
+└── README.md   
 
 ## 📸 Screenshot  
 
