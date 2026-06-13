@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.marquee {
+  background-color: rgb(211, 211, 211);
+  font-size: 70px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 3px black;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee span {  
+  display: inline-block;
+  width: 100%;
+  animation: move 10s linear infinite;
+}
+
+@keyframes move {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 400px;
+}
+
+.sec1{
+    background-image: url(./images/thanjai.jfif);
+    background-position: center right;
+}
+
+.sec1 > article{
+    height: 100%;
+    background-color: rgba(112, 86, 16, 0.699);
+    
+}
+
+.sec2{
+    grid-column: span 2;
+    background-image: url(./images/Courtallam.jpg);
+    
+}
+.sec2 > article{
+    height: 100%;
+    background-color: rgba(15, 70, 8, 0.699);
+}
+
+.sec3{
+    grid-column: span 2;
+    background-image: url(./images/thanushkodi.jpg);
+    background-position: center top;
+}
+.sec3 > article{
+    height: 100%;
+    background-color: rgba(12, 136, 145, 0.699);
+}
+
+.sec4{
+    background-image: url(./images/madurai.jfif);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec4 > article{
+    height: 100%;
+    background-color:  rgba(41, 40, 40, 0.699);
+}
+
+.sec5{
+    background-image: url(./images/kodaikanal.jpg);
+    background-position: bottom;
+}
+.sec5 > article{
+    height: 100%;
+    background-color: rgba(21, 97, 11, 0.699);
+}
+
+.sec6{
+    grid-column: span 2;
+    background-image: url(./images/mahapaliburam.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec6 > article{
+    height: 100%;
+    background-color: rgba(197, 76, 6, 0.699);
+}
+
+.sec7{
+    grid-column: span 2;
+    background-image: url(./images/isha.jfif);
+    background-position: center;
+}
+.sec7 > article{
+    height: 100%;
+    background-color: rgba(31, 30, 30, 0.699);
+}
+
+.sec8{
+    background-image: url(./images/kumari.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec8 > article{
+    height: 100%;
+    background-color: rgba(70, 38, 20, 0.699);
+}
+
+.sec9{
+    background-image: url(./images/ooty.jpg);
+    background-position: bottom;
+}
+.sec9 > article{
+    height: 100%;
+    background-color: rgba(39, 68, 7, 0.699);
+}
+
+.sec10{
+    grid-column: span 2;
+    background-image: url(./images/chidambaram.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.sec10 > article{
+    height: 100%;
+    background-color: rgba(1, 92, 84, 0.699);
+}
+
+.sec11{
+    grid-column: span 2;
+    background-image: url(./images/tuticorin.jpg);
+    background-position: center;
+}
+.sec11 > article{
+    height: 100%;
+    background-color: rgba(211, 143, 88, 0.699);
+}
+
+
+.sec12{
+    background-image: url(./images/kolli-hils.jpg);
+    /* background-position: center; */
+}
+.sec12 > article{
+    height: 100%;
+    background-color: rgba(18, 68, 37, 0.699);
+}
+
+.sec1 > article,
+.sec2 > article,
+.sec3 > article,
+.sec4 > article,
+.sec5 > article,
+.sec6 > article,
+.sec7 > article,
+.sec8 > article,
+.sec9 > article,
+.sec10 > article,
+.sec11 > article,
+.sec12 > article {
+  transition: 2s;
+}
+
+.sec1 > article:hover,
+.sec2 > article:hover,
+.sec3 > article:hover,
+.sec4 > article:hover,
+.sec5 > article:hover,
+.sec6 > article:hover,
+.sec7 > article:hover,
+.sec8 > article:hover,
+.sec9 > article:hover,
+.sec10 > article:hover,
+.sec11 > article:hover,
+.sec12 > article:hover {
+  background-color: transparent;
+}
+
+article > div{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 100px 30px;
+    gap: 10px;
+}
+.content > h1{
+    font-size: 35px;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    text-transform: uppercase;
+}
+
+.content > p{
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .marquee {
+    font-size: 35px;
+  }
+
+  article > div {
+    width: 90%;
+    padding: 40px 20px;
+  }
+
+  .content > h1 {
+    font-size: 24px;
+  }
+
+  .content > p {
+    font-size: 16px;
+  }
+}
