@@ -50,12 +50,12 @@ A simple responsive web project showcasing famous tourist places in Tamil Nadu u
 
 ## 📁 Project Structure
 
-netflix-clone/  
-│  
-├── tourism.html
-├── tourism.css 
-├── images/  
-└── screenshots/  
+netflix-clone/    
+│     
+├── tourism.html  
+├── tourism.css   
+├── images/    
+└── screenshots/    
 
 ---
 
