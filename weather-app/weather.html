@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>real-time weather app</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            height: 100vh;
+            background-image: url(./images/background.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:cover;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .heading{
+            /* background-color: aliceblue; */
+            width: 30%;
+            height: 14%;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            justify-content: space-around;
+            font-weight: bold;
+            color: wheat;
+        }
+        .heading > p{
+            letter-spacing: 1.3px;
+            font-size: 20px;
+            text-shadow: -1px -1px 2px black;
+        }
+        .heading > h1{
+            letter-spacing: 1.4px;
+            text-shadow: -3px 2px 2px black;
+            font-size: 35px;
+        }
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            border: 2px solid #324357;
+            padding: 30px 10px;
+            height: 85%;
+            width: 60%;
+            border-radius: 15px;
+            background-color: rgba(127, 214, 255, 0.267);
+        }
+        .box > input{
+            outline: none;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 16px;
+            letter-spacing: 1.2px;
+            width: 70%;
+            background-color: rgba(255, 255, 255, 0.705);
+        }
+        .box > input:focus{
+            border-color: rgb(32, 24, 61);   
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        }
+        .box > button{
+            cursor: pointer;
+            padding: 9px;
+            border: none;
+            border: 1px solid black;
+            background-color:#233F67;
+            font-size: 18px;
+            letter-spacing: 1.2px;
+            font-weight: bold;
+            border-radius: 10px;
+            width: 30%;
+            color: white;
+        }
+        .box > button:hover{
+            background-color: #192c47;
+        }
+         #output{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            border: none;
+            padding: 15px;
+            height: auto;
+            width: 100%;
+            /* background: none; */
+            gap: 30px;
+        }
+        #output > h1{
+            letter-spacing: 1.5px;
+            font-size: 23px;
+        }
+        #output > h2{
+            font-size: 21px;
+            font-weight: 400;
+        }
+        @media (max-width: 768px) {
+            .box {
+           width: 90%;
+           flex-direction: column;
+           height: auto;
+           padding: 20px 10px;
+        }
+
+         .box > input {
+            width: 90%;
+        }
+
+        .box > button {
+            width: 60%;
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <section>
+        <div class="heading">
+             <h1>🌦 Weather App</h1>
+            <p>Check real-time weather of any city</p>
+        </div>
+        <div class="box">
+            <input type="text" placeholder="Enter city name...">
+            <button type="submit">search</button>
+            <div id="output"></div>
+        </div>
+    </section>
+
+    <script src="./weather.js"></script>
+</body>
+</html>
